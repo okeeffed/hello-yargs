@@ -15,6 +15,15 @@ const help = `
     $ node index.js friends
 `;
 
+/**
+ * Logs back a friendly hello.
+ * @example
+ * node index.js hello
+ * // logs back 'hello clark'
+ * node index.js hello --name bilfred
+ * // logs back 'hello bilfred'
+ *
+ */
 const hello = () => {
     const name = argv.name
         ? argv.name
@@ -22,6 +31,13 @@ const hello = () => {
     console.log(`hello ${name}`);
 };
 
+/**
+ * Logs back to friends argument.
+ * @example
+ * node index.js friends
+ * // logs 'are like flowers'
+ *
+ */
 const friends = () => console.log('are like flowers');
 
 /**
